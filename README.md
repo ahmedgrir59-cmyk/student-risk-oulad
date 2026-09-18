@@ -17,7 +17,7 @@ Predict whether an enrollment is **At Risk** by Day 28 using only information av
 ## Course notebooks
 
 - **Project notebook:** `notebooks/Student_Risk_Analysis_and_Models.ipynb` — end-to-end analysis and models appropriate to the Student Risk classification task.
-- **Course companion notebook:** `notebooks/Machine_Learning_Course_Methods_Reference.ipynb` — broader syllabus reference covering classification, regression, clustering, PCA, reinforcement learning, ANN, activations/optimizers, and an optional CNN example.
+- **Course companion notebook:** `notebooks/Machine_Learning_and_Deep_Learning_Full_Course_Reference.ipynb` — broader syllabus reference covering classification, regression, clustering, PCA, reinforcement learning, ANN, activations/optimizers, and an optional CNN example.
 
 The companion notebook is for course coverage and viva revision; it is not used to select or evaluate the official Student Risk model.
 
