@@ -1,5 +1,7 @@
 # Student Risk Intelligence — OULAD
 
+**Live Demo:** https://student-risk-oulad-production.up.railway.app
+
 Early-warning machine learning system that uses the **first 28 days** of student activity to estimate academic risk and support timely human intervention.
 
 ![Dashboard preview](docs/dashboard_preview.png)
