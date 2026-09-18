@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Local Day-28 student academic risk dashboard for the OULAD early-warning project." />
+  <title>Student Risk Intelligence</title>
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+  <div class="shell">
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true">SR</div>
+        <div>
+          <h1>Student Risk Intelligence</h1>
+          <p>Day-28 academic progress monitoring & early-risk dashboard</p>
+        </div>
+      </div>
+      <div class="model-chip" aria-label="Loaded model"><span class="dot" aria-hidden="true"></span><span id="modelName">Loading model…</span></div>
+    </header>
+
+    <div id="errorBanner" class="error-banner" role="alert" hidden></div>
+
+    <main>
+      <section class="summary-grid" aria-label="Evaluation summary">
+        <article class="metric-card">
+          <span class="metric-label">Evaluation enrollments</span>
+          <strong id="totalRows">—</strong>
+          <small><span id="uniqueStudents">—</span> unique students · locked holdout</small>
+        </article>
+        <article class="metric-card high-card">
+          <span class="metric-label">Higher risk</span>
+          <strong id="highCount">—</strong>
+          <small id="highRate">—</small>
+        </article>
+        <article class="metric-card medium-card">
+          <span class="metric-label">Medium risk</span>
+          <strong id="mediumCount">—</strong>
+          <small id="mediumRate">—</small>
+        </article>
+        <article class="metric-card low-card">
+          <span class="metric-label">Lower risk</span>
+          <strong id="lowCount">—</strong>
+          <small id="lowRate">—</small>
+        </article>
+        <article class="metric-card">
+          <span class="metric-label">Recall</span>
+          <strong id="recall">—</strong>
+          <small>Priority: catch at-risk students</small>
+        </article>
+        <article class="metric-card">
+          <span class="metric-label">ROC-AUC</span>
+          <strong id="rocAuc">—</strong>
+          <small>Ranking performance</small>
+        </article>
+      </section>
+
+      <section class="workspace">
+        <aside class="student-panel card" aria-label="Student cohort browser">
+          <div class="section-head">
+            <div><span class="eyebrow">COHORT</span><h2>Student enrollments</h2></div>
+            <span id="studentCountBadge" class="badge">—</span>
+          </div>
+          <div class="filters">
+            <label class="sr-only" for="searchInput">Search student, module, or presentation</label>
+            <input id="searchInput" type="search" autocomplete="off" placeholder="Search student, module…" />
+            <label class="sr-only" for="riskFilter">Filter by risk band</label>
+            <select id="riskFilter" aria-label="Filter by risk band">
+              <option>All</option><option>High</option><option>Medium</option><option>Low</option>
+            </select>
+            <label class="sr-only" for="sortFilter">Sort students</label>
+            <select id="sortFilter" aria-label="Sort students">
+              <option value="prob_desc">Risk: high to low</option>
+              <option value="prob_asc">Risk: low to high</option>
+            </select>
+          </div>
+          <div id="studentList" class="student-list" aria-live="polite"></div>
+        </aside>
+
+        <section class="student-detail" aria-label="Selected student details">
+          <article class="card hero-card">
+            <div class="detail-top">
+              <div>
+                <span class="eyebrow">SELECTED STUDENT</span>
+                <h2 id="studentTitle">Choose a student</h2>
+                <p id="studentMeta">Select a row from the cohort to inspect progress and risk.</p>
+              </div>
+              <div id="riskPill" class="risk-pill neutral">—</div>
+            </div>
+            <div class="risk-line">
+              <div>
+                <span class="metric-label">Calibrated risk probability</span>
+                <strong id="riskProbability">—</strong>
+              </div>
+              <div class="gauge" role="progressbar" aria-label="Calibrated risk probability" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div id="gaugeFill" class="gauge-fill"></div></div>
+              <button id="livePredictBtn" class="primary-btn" type="button" disabled>Run live model inference</button>
+            </div>
+            <div id="liveStatus" class="live-status" role="status" aria-live="polite"></div>
+          </article>
+
+          <div class="two-col">
+            <article class="card">
+              <div class="section-head"><div><span class="eyebrow">PROGRESS</span><h2>Four-week engagement</h2></div><span id="engagementBadge" class="badge">—</span></div>
+              <svg id="trendChart" viewBox="0 0 640 250" role="img" aria-label="Weekly VLE click trend"></svg>
+              <div class="mini-stats">
+                <div><span>Active days</span><b id="activeDays">—</b></div>
+                <div><span>Last 7 days</span><b id="active7">—</b></div>
+                <div><span>Days inactive</span><b id="daysSince">—</b></div>
+              </div>
+            </article>
+            <article class="card">
+              <div class="section-head"><div><span class="eyebrow">ASSESSMENTS</span><h2>Early academic signals</h2></div></div>
+              <div class="assessment-stack">
+                <div class="stat-row"><span>Mean score</span><strong id="assessmentScore">—</strong></div>
+                <div class="stat-row"><span>Completion rate</span><strong id="completionRate">—</strong></div>
+                <div class="stat-row"><span>Missed assessments</span><strong id="missedAssessments">—</strong></div>
+              </div>
+              <p class="note">The model uses only information available through Day 28. These are predictive signals, not causal diagnoses.</p>
+            </article>
+          </div>
+
+          <div class="two-col">
+            <article class="card">
+              <div class="section-head"><div><span class="eyebrow">SUPPORT</span><h2>Recommended actions</h2></div></div>
+              <div id="recommendations" class="recommendations"><p class="empty">Select a student to view support recommendations.</p></div>
+            </article>
+            <article class="card">
+              <div class="section-head"><div><span class="eyebrow">LOCAL SHAP · SELECTED ENROLLMENT</span><h2>Why this prediction moved</h2></div><span class="badge">On demand</span></div>
+              <p class="context-note">Student-specific signed SHAP factors for the selected enrollment.</p>
+              <div id="localFactors"><p class="empty">Select a student to compute its local explanation.</p></div>
+            </article>
+          </div>
+        </section>
+
+        <aside class="analytics-panel" aria-label="Model analytics">
+          <article class="card compact-card">
+            <div class="section-head"><div><span class="eyebrow">MODEL · DEVELOPMENT ONLY</span><h2>CV comparison</h2></div></div>
+            <div id="modelComparison"></div>
+            <p class="context-note">Final model selected after tuning using development-only 5-fold group-aware CV. The locked holdout was not used for model selection.</p>
+          </article>
+          <article class="card compact-card">
+            <div class="section-head"><div><span class="eyebrow">GLOBAL SHAP · DEVELOPMENT</span><h2>Overall importance</h2></div></div>
+            <p class="context-note">Mean |SHAP| across a development sample: what matters overall, not why this student was flagged.</p>
+            <div id="importanceBars"></div>
+          </article>
+          <article class="card compact-card">
+            <div class="section-head"><div><span class="eyebrow">FAIRNESS SNAPSHOT</span><h2>Support-alert burden</h2></div></div>
+            <div id="fairnessSnapshot"></div>
+            <p class="note">Subgroup differences require human interpretation and do not by themselves prove discrimination.</p>
+          </article>
+          <article class="card compact-card">
+            <div class="section-head"><div><span class="eyebrow">RESPONSIBLE AI</span><h2>Use with human review</h2></div></div>
+            <p class="note">Risk bands prioritize supportive outreach. They must not be used for autonomous grading, admissions, discipline, or exclusion.</p>
+          </article>
+        </aside>
+      </section>
+    </main>
+  </div>
+  <script src="/static/app.js"></script>
+</body>
+</html>

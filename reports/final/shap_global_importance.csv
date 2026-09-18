@@ -1,0 +1,97 @@
+feature,source_feature,mean_abs_shap,interpretation
+num__assessment_weight_completed_28d,assessment_weight_completed_28d,0.3618225717731036,Global importance magnitude only; larger values mean greater average influence on model output. No causal or global directional claim.
+num__weighted_assessment_score_28d,weighted_assessment_score_28d,0.34192704500106597,Global importance magnitude only; larger values mean greater average influence on model output. No causal or global directional claim.
+num__active_days_28d,active_days_28d,0.24922811864933742,Global importance magnitude only; larger values mean greater average influence on model output. No causal or global directional claim.
+num__assessment_weight_due_28d,assessment_weight_due_28d,0.23126946338271814,Global importance magnitude only; larger values mean greater average influence on model output. No causal or global directional claim.
+num__unique_sites_28d,unique_sites_28d,0.22278919672732492,Global importance magnitude only; larger values mean greater average influence on model output. No causal or global directional claim.
+num__assessment_completion_rate_28d,assessment_completion_rate_28d,0.19484396496580553,Global importance magnitude only; larger values mean greater average influence on model output. No causal or global directional claim.
+cat__code_module_FFF,code_module,0.1930776311852947,Global importance magnitude only; larger values mean greater average influence on model output. No causal or global directional claim.
+num__late_submissions_28d,late_submissions_28d,0.19235697686128356,Global importance magnitude only; larger values mean greater average influence on model output. No causal or global directional claim.
+cat__highest_education_Lower Than A Level,highest_education,0.18175281374612806,Global importance magnitude only; larger values mean greater average influence on model output. No causal or global directional claim.
+num__assessments_submitted_28d,assessments_submitted_28d,0.17211081122113028,Global importance magnitude only; larger values mean greater average influence on model output. No causal or global directional claim.
+num__assessments_missed_28d,assessments_missed_28d,0.15801243628408151,Global importance magnitude only; larger values mean greater average influence on model output. No causal or global directional claim.
+cat__code_module_DDD,code_module,0.15746175230732642,Global importance magnitude only; larger values mean greater average influence on model output. No causal or global directional claim.
+num__days_since_last_activity_28d,days_since_last_activity_28d,0.15617340061239787,Global importance magnitude only; larger values mean greater average influence on model output. No causal or global directional claim.
+cat__code_module_BBB,code_module,0.1278781553894699,Global importance magnitude only; larger values mean greater average influence on model output. No causal or global directional claim.
+num__has_early_assessment_28d,has_early_assessment_28d,0.12599177547744003,Global importance magnitude only; larger values mean greater average influence on model output. No causal or global directional claim.
+num__vle_clicks_subpage_28d,vle_clicks_subpage_28d,0.10150350833472412,Global importance magnitude only; larger values mean greater average influence on model output. No causal or global directional claim.
+cat__highest_education_A Level or Equivalent,highest_education,0.07724694691552139,Global importance magnitude only; larger values mean greater average influence on model output. No causal or global directional claim.
+num__studied_credits,studied_credits,0.0727185540305956,Global importance magnitude only; larger values mean greater average influence on model output. No causal or global directional claim.
+cat__code_module_GGG,code_module,0.06740146414015386,Global importance magnitude only; larger values mean greater average influence on model output. No causal or global directional claim.
+cat__highest_education_HE Qualification,highest_education,0.06711935569342706,Global importance magnitude only; larger values mean greater average influence on model output. No causal or global directional claim.
+num__assessment_min_score_28d,assessment_min_score_28d,0.06329084956898882,Global importance magnitude only; larger values mean greater average influence on model output. No causal or global directional claim.
+num__num_of_prev_attempts,num_of_prev_attempts,0.059174607800312695,Global importance magnitude only; larger values mean greater average influence on model output. No causal or global directional claim.
+num__vle_clicks_page_28d,vle_clicks_page_28d,0.05869219854076286,Global importance magnitude only; larger values mean greater average influence on model output. No causal or global directional claim.
+num__active_days_last7d,active_days_last7d,0.05349329690093808,Global importance magnitude only; larger values mean greater average influence on model output. No causal or global directional claim.
+cat__code_module_EEE,code_module,0.05114260810819809,Global importance magnitude only; larger values mean greater average influence on model output. No causal or global directional claim.
+cat__imd_band_0-10%,imd_band,0.05071266497943806,Global importance magnitude only; larger values mean greater average influence on model output. No causal or global directional claim.
+num__clicks_week3_28d,clicks_week3_28d,0.045262540437711225,Global importance magnitude only; larger values mean greater average influence on model output. No causal or global directional claim.
+cat__region_Scotland,region,0.04362383224767291,Global importance magnitude only; larger values mean greater average influence on model output. No causal or global directional claim.
+cat__imd_band_10-20,imd_band,0.04221441628718028,Global importance magnitude only; larger values mean greater average influence on model output. No causal or global directional claim.
+cat__code_presentation_2013B,code_presentation,0.0412214565595422,Global importance magnitude only; larger values mean greater average influence on model output. No causal or global directional claim.
+num__vle_clicks_oucontent_28d,vle_clicks_oucontent_28d,0.04114058872034103,Global importance magnitude only; larger values mean greater average influence on model output. No causal or global directional claim.
+cat__code_module_AAA,code_module,0.04057655769897339,Global importance magnitude only; larger values mean greater average influence on model output. No causal or global directional claim.
+num__unique_activity_types_28d,unique_activity_types_28d,0.04016706776208434,Global importance magnitude only; larger values mean greater average influence on model output. No causal or global directional claim.
+cat__code_presentation_2013J,code_presentation,0.03663518592474416,Global importance magnitude only; larger values mean greater average influence on model output. No causal or global directional claim.
+cat__region_Wales,region,0.029589459222911993,Global importance magnitude only; larger values mean greater average influence on model output. No causal or global directional claim.
+num__vle_clicks_quiz_28d,vle_clicks_quiz_28d,0.028868136446660753,Global importance magnitude only; larger values mean greater average influence on model output. No causal or global directional claim.
+cat__imd_band_90-100%,imd_band,0.027979941302810625,Global importance magnitude only; larger values mean greater average influence on model output. No causal or global directional claim.
+cat__disability_N,disability,0.02781750691394241,Global importance magnitude only; larger values mean greater average influence on model output. No causal or global directional claim.
+num__avg_clicks_per_active_day_28d,avg_clicks_per_active_day_28d,0.027381217178812232,Global importance magnitude only; larger values mean greater average influence on model output. No causal or global directional claim.
+cat__disability_Y,disability,0.026947831324674383,Global importance magnitude only; larger values mean greater average influence on model output. No causal or global directional claim.
+num__vle_clicks_resource_28d,vle_clicks_resource_28d,0.025521276708453368,Global importance magnitude only; larger values mean greater average influence on model output. No causal or global directional claim.
+num__clicks_week4_28d,clicks_week4_28d,0.025140447715207636,Global importance magnitude only; larger values mean greater average influence on model output. No causal or global directional claim.
+num__vle_clicks_ouwiki_28d,vle_clicks_ouwiki_28d,0.025006774372158966,Global importance magnitude only; larger values mean greater average influence on model output. No causal or global directional claim.
+num__assessment_max_score_28d,assessment_max_score_28d,0.02381000385095547,Global importance magnitude only; larger values mean greater average influence on model output. No causal or global directional claim.
+cat__imd_band_80-90%,imd_band,0.023734243767477167,Global importance magnitude only; larger values mean greater average influence on model output. No causal or global directional claim.
+cat__imd_band_70-80%,imd_band,0.023633187398905308,Global importance magnitude only; larger values mean greater average influence on model output. No causal or global directional claim.
+num__assessment_mean_score_28d,assessment_mean_score_28d,0.022652571721923233,Global importance magnitude only; larger values mean greater average influence on model output. No causal or global directional claim.
+cat__age_band_35-55,age_band,0.02080352541005165,Global importance magnitude only; larger values mean greater average influence on model output. No causal or global directional claim.
+num__vle_clicks_homepage_28d,vle_clicks_homepage_28d,0.020690410052345197,Global importance magnitude only; larger values mean greater average influence on model output. No causal or global directional claim.
+num__assessments_due_28d,assessments_due_28d,0.020661717825784826,Global importance magnitude only; larger values mean greater average influence on model output. No causal or global directional claim.
+num__clicks_week2_28d,clicks_week2_28d,0.020429213859061573,Global importance magnitude only; larger values mean greater average influence on model output. No causal or global directional claim.
+cat__imd_band_20-30%,imd_band,0.018741607584794946,Global importance magnitude only; larger values mean greater average influence on model output. No causal or global directional claim.
+num__vle_clicks_questionnaire_28d,vle_clicks_questionnaire_28d,0.01758469543913959,Global importance magnitude only; larger values mean greater average influence on model output. No causal or global directional claim.
+cat__imd_band_60-70%,imd_band,0.017437767804622074,Global importance magnitude only; larger values mean greater average influence on model output. No causal or global directional claim.
+cat__region_North Region,region,0.01649781927614862,Global importance magnitude only; larger values mean greater average influence on model output. No causal or global directional claim.
+cat__region_South Region,region,0.01559041962667801,Global importance magnitude only; larger values mean greater average influence on model output. No causal or global directional claim.
+cat__region_South West Region,region,0.014350309209345009,Global importance magnitude only; larger values mean greater average influence on model output. No causal or global directional claim.
+cat__region_North Western Region,region,0.013831016346608844,Global importance magnitude only; larger values mean greater average influence on model output. No causal or global directional claim.
+cat__code_presentation_2014J,code_presentation,0.012934099479464733,Global importance magnitude only; larger values mean greater average influence on model output. No causal or global directional claim.
+num__vle_clicks_dualpane_28d,vle_clicks_dualpane_28d,0.012151601487996882,Global importance magnitude only; larger values mean greater average influence on model output. No causal or global directional claim.
+cat__age_band_0-35,age_band,0.012138307999260946,Global importance magnitude only; larger values mean greater average influence on model output. No causal or global directional claim.
+num__clicks_week1_28d,clicks_week1_28d,0.011913942448813511,Global importance magnitude only; larger values mean greater average influence on model output. No causal or global directional claim.
+num__banked_submissions_28d,banked_submissions_28d,0.01136250440561915,Global importance magnitude only; larger values mean greater average influence on model output. No causal or global directional claim.
+num__click_change_week4_vs_week1,click_change_week4_vs_week1,0.01102773108049196,Global importance magnitude only; larger values mean greater average influence on model output. No causal or global directional claim.
+num__vle_clicks_glossary_28d,vle_clicks_glossary_28d,0.010849949688746571,Global importance magnitude only; larger values mean greater average influence on model output. No causal or global directional claim.
+cat__gender_F,gender,0.00973076228921027,Global importance magnitude only; larger values mean greater average influence on model output. No causal or global directional claim.
+cat__code_presentation_2014B,code_presentation,0.009379131024011389,Global importance magnitude only; larger values mean greater average influence on model output. No causal or global directional claim.
+cat__region_East Anglian Region,region,0.009278031293314929,Global importance magnitude only; larger values mean greater average influence on model output. No causal or global directional claim.
+num__vle_clicks_htmlactivity_28d,vle_clicks_htmlactivity_28d,0.009174713674582358,Global importance magnitude only; larger values mean greater average influence on model output. No causal or global directional claim.
+cat__region_East Midlands Region,region,0.00895574178261899,Global importance magnitude only; larger values mean greater average influence on model output. No causal or global directional claim.
+cat__imd_band_30-40%,imd_band,0.007994123835807549,Global importance magnitude only; larger values mean greater average influence on model output. No causal or global directional claim.
+num__module_presentation_length,module_presentation_length,0.007625507317390639,Global importance magnitude only; larger values mean greater average influence on model output. No causal or global directional claim.
+cat__gender_M,gender,0.007582354212860988,Global importance magnitude only; larger values mean greater average influence on model output. No causal or global directional claim.
+cat__imd_band_40-50%,imd_band,0.006950083764384811,Global importance magnitude only; larger values mean greater average influence on model output. No causal or global directional claim.
+num__weekly_click_slope_28d,weekly_click_slope_28d,0.006699716596335725,Global importance magnitude only; larger values mean greater average influence on model output. No causal or global directional claim.
+cat__region_West Midlands Region,region,0.0066829393454013,Global importance magnitude only; larger values mean greater average influence on model output. No causal or global directional claim.
+num__vle_clicks_url_28d,vle_clicks_url_28d,0.006111550205198072,Global importance magnitude only; larger values mean greater average influence on model output. No causal or global directional claim.
+cat__region_Yorkshire Region,region,0.00591462156919479,Global importance magnitude only; larger values mean greater average influence on model output. No causal or global directional claim.
+num__vle_clicks_oucollaborate_28d,vle_clicks_oucollaborate_28d,0.0059100769137528245,Global importance magnitude only; larger values mean greater average influence on model output. No causal or global directional claim.
+cat__region_South East Region,region,0.005662484287474776,Global importance magnitude only; larger values mean greater average influence on model output. No causal or global directional claim.
+num__date_registration,date_registration,0.005576080233031309,Global importance magnitude only; larger values mean greater average influence on model output. No causal or global directional claim.
+num__last_activity_day_28d,last_activity_day_28d,0.00540171604190059,Global importance magnitude only; larger values mean greater average influence on model output. No causal or global directional claim.
+cat__region_Ireland,region,0.005390187892022828,Global importance magnitude only; larger values mean greater average influence on model output. No causal or global directional claim.
+cat__region_London Region,region,0.005274053874764864,Global importance magnitude only; larger values mean greater average influence on model output. No causal or global directional claim.
+num__total_clicks_28d,total_clicks_28d,0.005215095728779888,Global importance magnitude only; larger values mean greater average influence on model output. No causal or global directional claim.
+cat__highest_education_Post Graduate Qualification,highest_education,0.004211509018509928,Global importance magnitude only; larger values mean greater average influence on model output. No causal or global directional claim.
+num__vle_clicks_ouelluminate_28d,vle_clicks_ouelluminate_28d,0.0038880273532640123,Global importance magnitude only; larger values mean greater average influence on model output. No causal or global directional claim.
+cat__highest_education_No Formal quals,highest_education,0.0034637685609945025,Global importance magnitude only; larger values mean greater average influence on model output. No causal or global directional claim.
+cat__code_module_CCC,code_module,0.0027566677558641044,Global importance magnitude only; larger values mean greater average influence on model output. No causal or global directional claim.
+num__vle_clicks_sharedsubpage_28d,vle_clicks_sharedsubpage_28d,0.0025283727185585743,Global importance magnitude only; larger values mean greater average influence on model output. No causal or global directional claim.
+num__vle_clicks_externalquiz_28d,vle_clicks_externalquiz_28d,0.0023773569043437706,Global importance magnitude only; larger values mean greater average influence on model output. No causal or global directional claim.
+cat__imd_band_50-60%,imd_band,0.0017258643464389543,Global importance magnitude only; larger values mean greater average influence on model output. No causal or global directional claim.
+cat__age_band_55<=,age_band,0.0015101068747956263,Global importance magnitude only; larger values mean greater average influence on model output. No causal or global directional claim.
+num__clicks_last7d,clicks_last7d,0.0014108024748069237,Global importance magnitude only; larger values mean greater average influence on model output. No causal or global directional claim.
+num__vle_clicks_dataplus_28d,vle_clicks_dataplus_28d,9.950940375158048e-05,Global importance magnitude only; larger values mean greater average influence on model output. No causal or global directional claim.
+num__vle_clicks_forumng_28d,vle_clicks_forumng_28d,4.680577602813193e-05,Global importance magnitude only; larger values mean greater average influence on model output. No causal or global directional claim.

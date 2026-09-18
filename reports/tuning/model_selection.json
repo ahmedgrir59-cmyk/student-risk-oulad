@@ -1,0 +1,19 @@
+{
+  "selection_rule": "Highest mean 5-fold StratifiedGroupKFold F1 on development data; recall then ROC-AUC break ties.",
+  "selected_model": "logistic_regression",
+  "selected_params": {
+    "C": 0.05,
+    "class_weight": "balanced"
+  },
+  "selected_cv_f1": 0.6704328627582294,
+  "selected_cv_recall": 0.6580491650974606,
+  "selected_cv_roc_auc": 0.7850418975381512,
+  "selected_cv_pr_auc": 0.763293555315784,
+  "development_rows": 22011,
+  "final_holdout_rows": 5504,
+  "development_unique_students": 19851,
+  "final_holdout_unique_students": 4975,
+  "student_overlap": 0,
+  "final_holdout_target_not_used_during_tuning": true,
+  "holdout_methodology_note": "The current reproducible tuning/calibration/threshold-selection pipeline does not use final-holdout targets. During earlier iterative project development, holdout diagnostics were viewed, so the packaged holdout is a locked evaluation holdout rather than a pristine never-seen external test. External/future-cohort validation remains recommended."
+}

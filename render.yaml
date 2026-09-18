@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: student-risk-oulad
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python demo/app.py
+    healthCheckPath: /api/health
+    envVars:
+      - key: NO_BROWSER
+        value: "1"

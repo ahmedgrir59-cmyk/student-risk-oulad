@@ -1,0 +1,7 @@
+{
+  "low_risk_upper_threshold": 0.2509141267833343,
+  "high_risk_lower_threshold": 0.3197141943804115,
+  "medium_range": "[0.250914, 0.319714)",
+  "threshold_method": "Low boundary is the highest OOF-calibrated probability threshold maintaining >=90% recall. High/decision boundary maximizes development OOF F1.",
+  "oof_f1_at_high_threshold": 0.6903030303030302
+}

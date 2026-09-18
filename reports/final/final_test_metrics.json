@@ -1,0 +1,44 @@
+{
+  "selected_model": "logistic_regression",
+  "selected_params": {
+    "C": 0.05,
+    "class_weight": "balanced"
+  },
+  "tuned_threshold_metrics": {
+    "threshold": 0.3197141943804115,
+    "accuracy": 0.6871366279069767,
+    "precision": 0.6058788242351529,
+    "recall": 0.8319604612850082,
+    "f1": 0.7011454356126345,
+    "roc_auc": 0.797656111083737,
+    "pr_auc": 0.7769585375977599,
+    "brier": 0.1791399560838184,
+    "ece_10_quantile": 0.014795161938171288,
+    "tn": 1762,
+    "fp": 1314,
+    "fn": 408,
+    "tp": 2020
+  },
+  "threshold_0_5_metrics": {
+    "threshold": 0.5,
+    "accuracy": 0.7305595930232558,
+    "precision": 0.7446918694976696,
+    "recall": 0.5922570016474464,
+    "f1": 0.6597843542096811,
+    "roc_auc": 0.797656111083737,
+    "pr_auc": 0.7769585375977599,
+    "brier": 0.1791399560838184,
+    "ece_10_quantile": 0.014795161938171288,
+    "tn": 2583,
+    "fp": 493,
+    "fn": 990,
+    "tp": 1438
+  },
+  "calibration": {
+    "oof_brier_calibrated": 0.1845036122228017,
+    "oof_ece_10_quantile": 0.00772415702618863,
+    "final_holdout_brier_calibrated": 0.1791399560838184,
+    "final_holdout_ece_10_quantile": 0.014795161938171288
+  },
+  "holdout_methodology_note": "The current reproducible tuning/calibration/threshold-selection pipeline does not use final-holdout targets. During earlier iterative project development, holdout diagnostics were viewed, so the packaged holdout is a locked evaluation holdout rather than a pristine never-seen external test. External/future-cohort validation remains recommended."
+}
