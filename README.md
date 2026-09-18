@@ -14,6 +14,13 @@ Predict whether an enrollment is **At Risk** by Day 28 using only information av
 - `final_result` is used only to construct the target; it is never a predictor.
 - `id_student` is used only for group-aware splitting; it is never a predictor.
 
+## Course notebooks
+
+- **Project notebook:** `notebooks/Student_Risk_Analysis_and_Models.ipynb` — end-to-end analysis and models appropriate to the Student Risk classification task.
+- **Course companion notebook:** `notebooks/Machine_Learning_Course_Methods_Reference.ipynb` — broader syllabus reference covering classification, regression, clustering, PCA, reinforcement learning, ANN, activations/optimizers, and an optional CNN example.
+
+The companion notebook is for course coverage and viva revision; it is not used to select or evaluate the official Student Risk model.
+
 ## Course workflow
 The main notebook contains the analysis and the classification models used for the course:
 
